@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+    <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Pagina de curriculum web, en la cual puedes ver algunos de mis proyectos y contactarme"/>
+    <meta name="keywords" content="HTML, CSS, Curriculum, Web, Proyectos, Contacto, Desarrolador"/>
+    <meta name="author" content="Axel Lencina"/>
+    <title>Curriculum WEB UNO</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+    </head>
+
+
+    <body>
+        <section id="datos-personales">
+            <h1>Lencina Axel</h1>
+            <h2>Desarrolador web</h2>
+            <section id="lista">
+                <ul>
+                    <li><strong>Nombre completo:</strong> <br> Axel Uriel Lencina</li>
+                    <li><strong>Formación académica:</strong> <br> Secundario completo - Titulo universitario en tecnologias web</li>
+                    <li><strong>Cualidades:</strong> <br> Trabajo en equipo, capacidad de adaptacion, proactividad, creatividad.</li>
+                    <li><strong>Nacionalidad:</strong> <br> Argentina</li>
+                    <li><strong>Edad:</strong> <br> 18 años</li>
+                    <li><strong>Idiomas:</strong> </li>    
+                    <li>Español: <progress value="100" max="100"></progress></li>
+                    <li>Inglés: <progress value="50" max="100"></progress></li>
+                    <li><img src="foto.jpg" id="imagen1"></li>
+                </ul>
+            </section>
+        </section>
+
+
+        <section id="proyectos">
+            <h3>Proyectos</h3>
+            <h4>Algunos de mis trabajos recientes</h4>
+                <div class="imagenes-ejemplos">
+                    <img src="web1.jpg" alt="Ejemplo1">    
+                    <img src="web2.jpg" alt="Ejemplo2">
+                    <img src="web3.jpg" alt="Ejemplo3">
+                </div>
+                <a href="https://www.mercadolibre.com.ar/" target="_blank" class="MercadoLibre">MercadoLibre</a>
+                <a href="https://www.youtube.com/" target="_blank" class="Youtube">Youtube</a>
+                <a href="https://twitter.com/home" target="_blank" class="Twitter">Twitter</a>
+        </section>
+
+
+        <section id="contacto">
+            <h5>¡Contactate conmigo!</h5>
+            <h6>A continuacion rellena los datos, cuentame sobre tus ideas y sobre la propuesta de trabajo...</h6>
+
+            <form action="submit-form.php" method="POST">
+                <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                <label for="message">Propuesta</label>
+                <textarea id="message" name="message" rows= 10 required></textarea>
+                </div>
+
+                <button type="submit">Enviar</button>   
+            </form>
+            
+        </section>
+    </body>
+</html>
